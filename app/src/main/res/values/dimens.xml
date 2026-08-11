@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_pedding_medium">12dp</dimen>
+    <dimen name="size_text_medium">24sp</dimen>
+    <dimen name="size_margin_medium">8dp</dimen>
+    <!--size pedding small-->
+    <dimen name="size_pedding_small">6dp</dimen>
+    <dimen name="toolbar_padding">12dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="icon_padding">4dp</dimen>
+    <!--custom nav-->
+    <dimen name="size_radius_nav">12dp</dimen>
+    <dimen name="size_elevation_nav">3dp</dimen>
+    <!--custom linear card-->
+    <dimen name="size_radius_card">8dp</dimen>
+    <dimen name="size_elevation_card">2dp</dimen>
+</resources>

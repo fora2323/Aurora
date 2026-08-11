@@ -1,3 +1,13 @@
 <resources>
-	<string name="app_name" translatable="false">Aurora</string>
+    <string name="app_name" translatable="false">Aurora</string>
+    <string name="app_version">1.6-1020</string>
+    <!--main activity-->
+    <string name="tag_home">Home</string>
+    <string name="tag_dec_home">Dasboard Home</string>
+    <string name="tag_apps">Apps</string>
+    <string name="tag_dec_apps">Management Applacation</string>
+    <string name="tag_plugin">Settings</string>
+    <string name="tag_dec_plugin">Management Plugin</string>
+    <string name="tag_settings">Settings</string>
+    <string name="tag_dec_settings">System Preference</string>
 </resources>

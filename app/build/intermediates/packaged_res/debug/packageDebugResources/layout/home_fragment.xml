@@ -1,0 +1,94 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:id="@+id/_main">
+	<androidx.core.widget.NestedScrollView
+		android:id="@+id/scroll_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<LinearLayout
+			android:id="@+id/container"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="9dp"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/card_status"
+				android:layout_width="match_parent"
+				android:layout_height="150dp"
+				android:layout_margin="6dp"
+				android:padding="10dp"
+				android:background="@drawable/bg_card"
+				android:orientation="horizontal"
+				android:elevation="@dimen/size_elevation_card">
+				<LinearLayout
+					android:id="@+id/linear4"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/textview1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:paddingLeft="8dp"
+						android:paddingTop="8dp"
+						android:paddingRight="8dp"
+						android:paddingBottom="2dp"
+						android:text="@string/app_name"
+						android:textSize="20sp"
+						android:textStyle="bold" />
+					<TextView
+						android:id="@+id/textview2"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:paddingLeft="8dp"
+						android:paddingTop="2dp"
+						android:paddingRight="8dp"
+						android:paddingBottom="8dp"
+						android:text="@string/app_version"
+						android:textSize="14sp" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/card_info"
+				android:layout_width="match_parent"
+				android:layout_height="200dp"
+				android:layout_margin="6dp"
+				android:padding="8dp"
+				android:background="@drawable/bg_card"
+				android:orientation="horizontal"
+				android:elevation="@dimen/size_elevation_card" />
+			<LinearLayout
+				android:id="@+id/linear1"
+				android:layout_width="match_parent"
+				android:layout_height="100dp"
+				android:layout_margin="6dp"
+				android:padding="8dp"
+				android:background="@drawable/bg_card"
+				android:orientation="vertical"
+				android:elevation="@dimen/size_elevation_card" />
+			<LinearLayout
+				android:id="@+id/linear2"
+				android:layout_width="match_parent"
+				android:layout_height="100dp"
+				android:layout_margin="6dp"
+				android:padding="8dp"
+				android:background="@drawable/bg_card"
+				android:orientation="vertical"
+				android:elevation="@dimen/size_elevation_card" />
+			<LinearLayout
+				android:id="@+id/linear3"
+				android:layout_width="match_parent"
+				android:layout_height="250dp"
+				android:layout_margin="6dp"
+				android:padding="8dp"
+				android:background="@drawable/bg_card"
+				android:orientation="vertical"
+				android:elevation="@dimen/size_elevation_card" />
+		</LinearLayout>
+	</androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -11,6 +11,8 @@ import android.widget.*;
 import java.io.*;
 import java.util.*;
 
+import com.google.android.material.color.MaterialColors;
+
 public class SketchwareUtil {
 
     public static int TOP = 1;
@@ -156,6 +158,11 @@ public class SketchwareUtil {
     public static void showMessage(Context _context, String _s) {
         Toast.makeText(_context, _s, Toast.LENGTH_SHORT).show();
     }
+
+    public static int getMaterialColor(Context context, int resourceId) {
+        return MaterialColors.getColor(context, resourceId, "getMaterialColor");
+    }
+
     public static int getLocationX(View _view) {
         int _location[] = new int[2];
         _view.getLocationInWindow(_location);

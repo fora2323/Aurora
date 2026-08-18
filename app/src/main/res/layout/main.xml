@@ -5,7 +5,7 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical"
-	android:background="?attr/colorSurface"
+	android:background="@color/colorSurface"
 	android:id="@+id/_main">
 	<LinearLayout
 		android:id="@+id/toolbar"
@@ -31,9 +31,9 @@
 				android:paddingRight="4dp"
 				android:paddingBottom="1dp"
 				android:text="@string/tag_home"
-				android:textSize="24sp"
-				android:textStyle="bold"
-				android:textColor="?colorPrimary" />
+				android:textSize="@dimen/size_text_large"
+				android:textColor="@color/colorPrimary"
+				style="@style/Aurora.Font.Bold" />
 			<TextView
 				android:id="@+id/textview2"
 				android:layout_width="wrap_content"
@@ -43,33 +43,32 @@
 				android:paddingRight="4dp"
 				android:paddingBottom="4dp"
 				android:text="@string/tag_dec_home"
-				android:textSize="14sp"
-				android:textColor="?colorOnSurfaceVariant" />
+				android:textSize="@dimen/size_text_small"
+				android:textColor="@color/colorOnSurfaceVariant"
+				style="@style/Aurora.Font.Regular" />
 		</LinearLayout>
 		<LinearLayout
 			android:id="@+id/container_id"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:gravity="right|center_vertical"
-			android:orientation="horizontal">
-			<androidx.appcompat.widget.AppCompatImageButton
-				android:id="@+id/imageview1"
-				android:layout_width="35dp"
-				android:layout_height="35dp"
-				android:layout_marginLeft="4dp"
-				android:layout_marginRight="4dp"
-				android:padding="4dp"
-				android:background="?attr/selectableItemBackgroundBorderless"
-				android:src="@drawable/ic_power_settings_new" />
-			<androidx.appcompat.widget.AppCompatImageButton
-				android:id="@+id/imageview2"
-				android:layout_width="35dp"
-				android:layout_height="35dp"
-				android:layout_marginLeft="4dp"
-				android:layout_marginRight="4dp"
-				android:padding="4dp"
-				android:background="?attr/selectableItemBackgroundBorderless"
-				android:src="@drawable/ic_info" />
+			android:gravity="right|center_horizontal"
+			android:orientation="horizontal"
+            tools:ignore="RtlHardcoded">
+			<TextView
+				android:id="@+id/id_user"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingLeft="12dp"
+				android:paddingTop="4dp"
+				android:paddingRight="12dp"
+				android:paddingBottom="4dp"
+				android:background="@drawable/bg_card_id"
+				android:text="ID 00000"
+				android:textSize="12sp"
+				android:textStyle="bold"
+				android:textColor="@color/colorOnSurface"
+				style="@style/Aurora.Font.Regular"
+                tools:ignore="HardcodedText" />
 		</LinearLayout>
 	</LinearLayout>
 	<FrameLayout
@@ -77,21 +76,24 @@
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:orientation="vertical">
+
 		<androidx.viewpager.widget.ViewPager
 			android:id="@+id/viewpager1"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent" />
+
 		<com.aurora.manager.view.AuroraNavigationBar
 			android:id="@+id/nav_bar"
 			android:layout_width="wrap_content"
-			android:layout_height="60dp"
+			android:layout_height="63dp"
+			android:layout_gravity="center_horizontal|bottom"
 			android:layout_margin="18dp"
-			android:padding="4dp"
 			android:background="@drawable/nav_background"
 			android:orientation="horizontal"
-			android:layout_gravity="center_horizontal|bottom"
-			app:ax_menu="@menu/nav_menu_bottom"
+			android:padding="4dp"
+			app:ax_elevation="@dimen/size_elevation_nav"
 			app:ax_itemIconTint="@color/nav_color_checked"
-			app:ax_elevation="@dimen/size_elevation_nav" />
+			app:ax_itemThumbColor="@color/colorSecondaryContainer"
+			app:ax_menu="@menu/nav_menu_bottom" />
 	</FrameLayout>
 </LinearLayout>

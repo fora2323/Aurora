@@ -2,7 +2,7 @@ package com.aurora.manager;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.FrameLayout;
+import androidx.fragment.app.Fragment;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -18,7 +18,6 @@ import androidx.core.graphics.Insets;
 import androidx.viewpager.widget.ViewPager;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.aurora.manager.view.AuroraNavigationBar;
@@ -32,8 +31,6 @@ public class MainActivity extends AppCompatActivity {
 	private LinearLayout toolbar;
 	private TextView textview1;
 	private TextView textview2;
-	private AppCompatImageButton imageview1;
-	private AppCompatImageButton imageview2;
 	private ViewPager viewpager1;
 	private AuroraNavigationBar nav_bar;
 	
@@ -64,8 +61,6 @@ public class MainActivity extends AppCompatActivity {
 	@AnyThread
 	private void initialize(@Nullable Bundle _savedInstanceState) {
 		textview2 = findViewById(R.id.textview2);
-		imageview1 = findViewById(R.id.imageview1);
-		imageview2 = findViewById(R.id.imageview2);
 		viewpager1 = findViewById(R.id.viewpager1);
 		nav_bar = findViewById(R.id.nav_bar);
 		toolbar = findViewById(R.id.toolbar);
@@ -75,8 +70,6 @@ public class MainActivity extends AppCompatActivity {
 	
 	@MainThread
 	private void initializeLogic() {
-		imageview1.setVisibility(View.GONE);
-		imageview2.setVisibility(View.GONE);
 		
 		// Masukkan 4 Fragment milikmu di sini
 		adapter.addFragment(new HomeFragmentActivity());

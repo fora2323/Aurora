@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base theme utama, extend dari Material3 Dark -->
+    <style name="Theme.Base.Aurora" parent="Theme.Material3.Dark.NoActionBar" />
+    <!-- Base overlay buat dialog -->
+    <style name="Theme.Base.Overlay.MediumContrast" parent="ThemeOverlay.Material3.Dialog" />
+</resources>

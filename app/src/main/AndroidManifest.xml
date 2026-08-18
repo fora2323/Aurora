@@ -1,6 +1,6 @@
-
 <manifest
 	xmlns:android="http://schemas.android.com/apk/res/android">
+	<uses-permission android:name="moe.shizuku.manager.permission.API_V23" />
 	<application
 		android:allowBackup="true"
 		android:icon="@mipmap/ic_launcher"
@@ -13,7 +13,6 @@
 			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
 			android:hardwareAccelerated="true"
 			android:supportsPictureInPicture="true"
-			android:screenOrientation="portrait"
 			android:exported="true">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
@@ -25,7 +24,17 @@
 			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
 			android:hardwareAccelerated="true"
 			android:supportsPictureInPicture="true"
-			android:screenOrientation="portrait"
 			android:windowSoftInputMode="stateHidden" />
+		<provider
+			android:name="rikka.shizuku.ShizukuProvider"
+			android:authorities="com.aurora.manager.shizuku"
+			android:multiprocess="false"
+			android:enabled="true"
+			android:exported="true"
+			android:permission="android.permission.INTERACT_ACROSS_USERS_FULL">
+			<meta-data
+				android:name="moe.shizuku.client.V3_SUPPORT"
+				android:value="true" />
+		</provider>
 	</application>
-</manifest>
+</manifest>

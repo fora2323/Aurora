@@ -1,25 +1,41 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <style name="AppTheme" parent="Theme.Base.Aurora">
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
-        <item name="android:windowLightNavigationBar">?attr/isLightTheme</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
         <item name="alertDialogTheme">@style/Theme.Dialog.Aurora</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="Theme.Base.Overlay.HighContrast">
-    </style>
-
     <style name="AppTheme.PopupOverlay" parent="Theme.Base.Overlay.MediumContrast">
-        <item name="android:colorBackground">?attr/colorSurface</item>
-        <item name="android:textColorPrimary">?attr/colorOnSurface</item>
+        <item name="android:colorBackground">@color/colorSurface</item>
+        <item name="android:textColorPrimary">@color/colorOnSurface</item>
     </style>
 
     <style name="Theme.Dialog.Aurora" parent="Theme.Base.Overlay.MediumContrast">
-        <item name="android:colorBackground">?attr/colorSurface</item>
-        <item name="android:textColorPrimary">?attr/colorOnSurface</item>
-        <item name="android:textColorSecondary">?attr/colorOnSurfaceVariant</item>
-        <item name="colorAccent">?attr/colorPrimary</item>
+        <item name="android:colorBackground">@color/colorSurface</item>
+        <item name="android:textColorPrimary">@color/colorOnSurface</item>
+        <item name="android:textColorSecondary">@color/colorOnSurfaceVariant</item>
+        <item name="colorAccent">@color/colorPrimary</item>
         <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="Aurora.Font.Regular" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/ar_regular</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Aurora.Font.SemiBold" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/ar_semibold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="Aurora.Font.Bold" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/ar_bold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="Aurora.Font.Light" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/ar_light</item>
+        <item name="android:textStyle">normal</item>
     </style>
 </resources>

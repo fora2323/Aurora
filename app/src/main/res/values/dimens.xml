@@ -14,4 +14,8 @@
     <!--custom linear card-->
     <dimen name="size_radius_card">8dp</dimen>
     <dimen name="size_elevation_card">2dp</dimen>
+    <!--custom textview card-->
+    <dimen name="size_text_radius_card">16dp</dimen>
+    <dimen name="size_text_large">24sp</dimen>
+    <dimen name="size_text_small">14sp</dimen>
 </resources>
